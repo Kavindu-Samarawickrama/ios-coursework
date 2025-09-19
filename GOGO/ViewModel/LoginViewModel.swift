@@ -18,8 +18,8 @@ class LoginViewModel: ObservableObject {
     @Published var jumpToMain: Bool = false
     @Published var isRegCompleted: Bool = false
     
-    @Published var logEmail: String = "User2@user.com"
-    @Published var logPassword: String = "user"
+    @Published var logEmail: String = ""
+    @Published var logPassword: String = ""
     
     func validateSign() -> Bool {
         if self.logEmail.isEmpty {
